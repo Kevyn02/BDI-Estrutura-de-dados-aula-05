@@ -1,0 +1,8 @@
+== INSERINDO ==
+insere  1 -> [1]  (n=1)
+insere  2 -> [1 -> 2]  (n=2)
+insere  3 -> [1 -> 2 -> 3]  (n=3)
+insere  4 -> [1 -> 2 -> 3 -> 4]  (n=4)
+insere  5 -> [1 -> 2 -> 3 -> 4 -> 5]  (n=5)
+
+Lista destruida. Tamanho final: 0
