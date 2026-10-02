@@ -1,0 +1,3 @@
+[]  (n=0)
+
+Lista destruida. Tamanho final: 0
