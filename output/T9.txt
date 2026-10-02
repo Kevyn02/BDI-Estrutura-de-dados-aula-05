@@ -1,0 +1,9 @@
+== INSERINDO ==
+insere 10 -> [10]  (n=1)
+insere 75 -> [10 -> 75]  (n=2)
+insere 40 -> [10 -> 40 -> 75]  (n=3)
+
+== BUSCANDO ==
+busca  10: ENCONTRADO   (1 comparacoes)
+
+Lista destruida. Tamanho final: 0
