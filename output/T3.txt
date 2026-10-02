@@ -1,0 +1,5 @@
+== INSERINDO ==
+insere 40 -> [40]  (n=1)
+insere 10 -> [10 -> 40]  (n=2)
+
+Lista destruida. Tamanho final: 0
