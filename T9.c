@@ -28,7 +28,8 @@ int main(void)
 
   printf("\n== BUSCANDO ==\n");
   int chaves[] = {10};
-  for (int i = 0; i < 1; i++)
+  int tamanho_chaves = sizeof(chaves) / sizeof(chaves[0]);
+  for (int i = 0; i < tamanho_chaves; i++)
   {
     int comps = 0;
     No *r = buscar_ordenado(&L, chaves[i], &comps);

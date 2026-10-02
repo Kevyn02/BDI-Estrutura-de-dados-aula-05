@@ -8,7 +8,7 @@
 #include "functions/destruir.c"
 #include "functions/imprimir.c"
 
-// gcc -Wall T11.c -o lista && ./lista > output/T11.txt && rm ./lista.exe && cat output/T11.txt
+// gcc -Wall T12.c -o lista && ./lista > output/T12.txt && rm ./lista.exe && cat output/T12.txt
 
 int main(void)
 {
@@ -26,16 +26,16 @@ int main(void)
     imprimir(&L);
   }
 
-  printf("\n== BUSCANDO ==\n");
-  int chaves[] = {999};
-  int tamanho_chaves = sizeof(chaves) / sizeof(chaves[0]);
-  for (int i = 0; i < tamanho_chaves; i++)
+  printf("\n== REMOVENDO ==\n");
+  int alvos[] = {10}; /* 1o, meio, inexistente */
+  int tamanho_alvos = sizeof(alvos) / sizeof(alvos[0]);
+  for (int i = 0; i < tamanho_alvos; i++)
   {
-    int comps = 0;
-    No *r = buscar_ordenado(&L, chaves[i], &comps);
-    printf("busca %3d: %-12s (%d comparacoes)\n",
-           chaves[i], r ? "ENCONTRADO" : "ausente", comps);
+    int ok = remover(&L, alvos[i]); // TODO: remover(&L, alvos[i])
+    printf("remove %3d [%s] -> ", alvos[i], ok ? "ok" : "--");
+    imprimir(&L);
   }
+
   destruir(&L);
   printf("\nLista destruida. Tamanho final: %d\n", L.tamanho);
   return 0;
