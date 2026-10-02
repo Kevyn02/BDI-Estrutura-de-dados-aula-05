@@ -1,0 +1,6 @@
+== INSERINDO ==
+insere 20 -> [20]  (n=1)
+insere 20 -> [20 -> 20]  (n=2)
+insere 20 -> [20 -> 20 -> 20]  (n=3)
+
+Lista destruida. Tamanho final: 0
