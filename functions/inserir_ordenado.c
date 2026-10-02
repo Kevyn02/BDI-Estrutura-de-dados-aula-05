@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "types/no.h"
+#include "../types/no.h"
 
 /* Insere 'valor' mantendo a ordem crescente. Retorna 1 em sucesso, 0 em falha. */
 int inserir_ordenado(Lista *L, int valor)

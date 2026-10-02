@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "types/no.h"
+#include "../types/no.h"
 
 /* Deixa a lista em estado vazio e consistente. */
 void inicializar(Lista *L)

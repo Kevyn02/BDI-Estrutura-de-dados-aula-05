@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "types/no.h"
+#include "../types/no.h"
 
 /* Remove a primeira ocorrência de 'valor'. Retorna 1 se removeu, 0 caso contrário. */
 int remover(Lista *L, int valor)

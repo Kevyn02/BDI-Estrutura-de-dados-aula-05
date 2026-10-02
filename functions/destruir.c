@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "types/no.h"
+#include "../types/no.h"
 
 /* Libera todos os nós e devolve a lista ao estado vazio. */
 void destruir(Lista *L)

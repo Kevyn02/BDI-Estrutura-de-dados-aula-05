@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "types/no.h"
+#include "../types/no.h"
 
 /* Retorna o nó com a chave procurada, ou NULL.
    Escreve em *comparacoes quantos nós foram efetivamente examinados. */

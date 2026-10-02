@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "types/no.h"
+#include "../types/no.h"
 
 void imprimir(Lista *L)
 {
