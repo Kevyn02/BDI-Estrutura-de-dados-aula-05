@@ -1,0 +1,6 @@
+== INSERINDO ==
+insere 10 -> [10]  (n=1)
+insere 40 -> [10 -> 40]  (n=2)
+insere 75 -> [10 -> 40 -> 75]  (n=3)
+
+Lista destruida. Tamanho final: 0
