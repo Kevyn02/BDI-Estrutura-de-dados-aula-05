@@ -21,7 +21,7 @@ int main(void)
   printf("== INSERINDO ==\n");
   for (int i = 0; i < n; i++)
   {
-    inserir_ordenado(&L, dados[i]); // TODO: inserir_ordenado(&L, dados[i])
+    inserir_ordenado(&L, dados[i], true); // TODO: inserir_ordenado(&L, dados[i])
     printf("insere %2d -> ", dados[i]);
     imprimir(&L);
   }

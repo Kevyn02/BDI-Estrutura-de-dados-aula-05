@@ -12,6 +12,8 @@
 
 int main(void)
 {
+  printf("== TESTE COM DUPLICATAS ==\n");
+
   Lista L;
   inicializar(&L);
 
@@ -21,12 +23,26 @@ int main(void)
   printf("== INSERINDO ==\n");
   for (int i = 0; i < n; i++)
   {
-    inserir_ordenado(&L, dados[i]); // TODO: inserir_ordenado(&L, dados[i])
+    inserir_ordenado(&L, dados[i], true); // TODO: inserir_ordenado(&L, dados[i])
     printf("insere %2d -> ", dados[i]);
     imprimir(&L);
   }
 
   destruir(&L);
   printf("\nLista destruida. Tamanho final: %d\n", L.tamanho);
+
+  printf("== TESTE SEM DUPLICATAS ==\n");
+
+  printf("== INSERINDO ==\n");
+  for (int i = 0; i < n; i++)
+  {
+    inserir_ordenado(&L, dados[i], false); // TODO: inserir_ordenado(&L, dados[i])
+    printf("insere %2d -> ", dados[i]);
+    imprimir(&L);
+  }
+
+  destruir(&L);
+  printf("\nLista destruida. Tamanho final: %d\n", L.tamanho);
+
   return 0;
 }
