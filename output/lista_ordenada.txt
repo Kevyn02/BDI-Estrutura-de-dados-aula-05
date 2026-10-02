@@ -1,0 +1,20 @@
+== INSERINDO ==
+insere 40 -> [40]  (n=1)
+insere 10 -> [10 -> 40]  (n=2)
+insere 75 -> [10 -> 40 -> 75]  (n=3)
+insere 30 -> [10 -> 30 -> 40 -> 75]  (n=4)
+insere 90 -> [10 -> 30 -> 40 -> 75 -> 90]  (n=5)
+insere 25 -> [10 -> 25 -> 30 -> 40 -> 75 -> 90]  (n=6)
+
+== BUSCANDO ==
+busca  10: ENCONTRADO   (1 comparacoes)
+busca  40: ENCONTRADO   (4 comparacoes)
+busca  60: ausente      (5 comparacoes)
+busca 999: ausente      (6 comparacoes)
+
+== REMOVENDO ==
+remove  10 [ok] -> [25 -> 30 -> 40 -> 75 -> 90]  (n=5)
+remove  40 [ok] -> [25 -> 30 -> 75 -> 90]  (n=4)
+remove 999 [--] -> [25 -> 30 -> 75 -> 90]  (n=4)
+
+Lista destruida. Tamanho final: 0

@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "functions/buscar_ordenado.c"
-#include "functions/inserir_ordenado.c"
+#include "functions/buscar_ordenado_desc.c"
+#include "functions/inserir_ordenado_desc.c"
 #include "functions/inicializar.c"
 #include "functions/remover.c"
 #include "functions/destruir.c"
 #include "functions/imprimir.c"
 
-// gcc -Wall lista_ordenada.c -o lista && ./lista > output/lista_ordenada.txt && rm ./lista.exe && cat output/lista_ordenada.txt
+// gcc -Wall lista_ordenada_desc.c -o lista && ./lista > output/lista_ordenada_desc.txt && rm ./lista.exe && cat output/lista_ordenada_desc.txt
 
 int main(void)
 {
@@ -21,7 +21,7 @@ int main(void)
   printf("== INSERINDO ==\n");
   for (int i = 0; i < n; i++)
   {
-    inserir_ordenado(&L, dados[i]); // TODO: inserir_ordenado(&L, dados[i])
+    inserir_ordenado_desc(&L, dados[i]); // TODO: inserir_ordenado(&L, dados[i])
     printf("insere %2d -> ", dados[i]);
     imprimir(&L);
   }
@@ -31,7 +31,7 @@ int main(void)
   for (int i = 0; i < 4; i++)
   {
     int comps = 0;
-    No *r = buscar_ordenado(&L, chaves[i], &comps);
+    No *r = buscar_ordenado_desc(&L, chaves[i], &comps);
     printf("busca %3d: %-12s (%d comparacoes)\n",
            chaves[i], r ? "ENCONTRADO" : "ausente", comps);
   }
